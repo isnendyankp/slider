@@ -1,3 +1,5 @@
+import Carousel from './Carousel';
+
 const App = () => {
   return (
     <main>
@@ -6,3 +8,5 @@ const App = () => {
   );
 };
 export default App;
+
+// - s7-209:import carousel @App.jsx
