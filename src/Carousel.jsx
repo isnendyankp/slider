@@ -6,7 +6,7 @@ const Carousel = () => {
   return (
     <section className='slider-container'>
       {people.map((person)=>{
-        return <article></article>
+        return <article className='slide'></article>
       })}
     </section>
   )
@@ -23,3 +23,4 @@ export default Carousel
 // - s7-210:cr8 iterate over people state value @return
 // - s7-210:pass in person  @return iterate over people state value
 // - s7-210:Add return with article @people.map return
+// - s7-210:Add CN slide @return article
