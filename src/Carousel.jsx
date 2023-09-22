@@ -4,7 +4,9 @@ import { shortList, list, longList } from './data';
 const Carousel = () => {
   const [people, setPeople] = usestate(shortList);
   return (
-    <h2>Carousel</h2>
+    <section className='slider-container'>
+
+    </section>
   )
 }
 
@@ -15,3 +17,4 @@ export default Carousel
 // - s7-209:Import shortlist, list & longlist
 // - s7-210:Cr8 people state value
 // - s7-210:pass in shortList as default state value @people state value
+// - s7-210:cr8 section with CN slider.... @return
