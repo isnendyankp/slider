@@ -5,7 +5,7 @@ const Carousel = () => {
   const [people, setPeople] = usestate(shortList);
   return (
     <section className='slider-container'>
-
+      {people.map(()=>)}
     </section>
   )
 }
@@ -18,3 +18,4 @@ export default Carousel
 // - s7-210:Cr8 people state value
 // - s7-210:pass in shortList as default state value @people state value
 // - s7-210:cr8 section with CN slider.... @return
+// - s7-210:cr8 iterate over people state value @return
