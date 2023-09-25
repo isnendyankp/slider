@@ -7,7 +7,9 @@ const Carousel = () => {
     <section className='slider-container'>
       {people.map((person)=>{
         const { id, image, name, title, quote } = person;
-        return <article className='slide' key={id}></article>
+        return <article className='slide' key={id}>
+          <img src="" alt="" />
+        </article>
       })}
     </section>
   )
@@ -28,3 +30,4 @@ export default Carousel
 // - s7-210:Add key base @return article
 // - s7-210:cr8 destructure equal to person
 // - s7-210:pass in id to key @return
+// - s7-210:cr8 base img @return
