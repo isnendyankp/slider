@@ -9,7 +9,7 @@ const Carousel = () => {
         const { id, image, name, title, quote } = person;
         return <article className='slide' key={id}>
           <img src={image} alt={name} className='person-img' />
-          <h5 className='name'></h5>
+          <h5 className='name'>{name}</h5>
         </article>
       })}
     </section>
@@ -36,3 +36,4 @@ export default Carousel
 // - s7-210:pass in name @return img alt
 // - s7-210:cr8 person-img CN  @return img
 // - s7-210:cr8 h5 wtih CN name  @return 
+// - s7-210:pass in name @return h5
