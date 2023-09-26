@@ -14,7 +14,7 @@ const Carousel = () => {
           <h5 className='name'>{name}</h5>
           <p className='title'>{title}</p>
           <p className='text'>{quote}</p>
-          <FaQuoteRight />
+          <FaQuoteRight className='icon' />
         </article>
       })}
     </section>
@@ -47,3 +47,4 @@ export default Carousel
 // - s7-210:cr8 paragraph with CN text
 // - s7-210:pass in quote @p with CN text
 // - s7-210:import & pass in FaQuoteRight
+// - s7-210:Add CN icon @FaQuoteRight
