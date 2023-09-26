@@ -11,6 +11,7 @@ const Carousel = () => {
           <img src={image} alt={name} className='person-img' />
           <h5 className='name'>{name}</h5>
           <p className='title'>{title}</p>
+          <p className='text'></p>
         </article>
       })}
     </section>
@@ -40,3 +41,4 @@ export default Carousel
 // - s7-210:pass in name @return h5
 // - s7-210:cr8 p with CN title
 // - s7-210:pass in title @p with CN title
+// - s7-210:cr8 paragraph with CN text
