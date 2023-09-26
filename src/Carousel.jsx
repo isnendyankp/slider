@@ -1,6 +1,7 @@
 import React from 'react'
 import { shortList, list, longList } from './data';
 import { FaQuoteRight } from 'react-icons/fa';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Carousel = () => {
   const [people, setPeople] = usestate(shortList);
