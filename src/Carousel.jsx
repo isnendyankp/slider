@@ -28,7 +28,7 @@ const Carousel = () => {
       <button type="button" className="prev" onClick={prevSlide}>
         <FiChevronLeft />
       </button>
-      <button type='button' className='next'>
+      <button type="button" className="next" onClick={nextSlide}>
 
       </button>
     </section>
@@ -65,6 +65,7 @@ export default Carousel
 // - s7-210:cr8 prevSlide base function
 // - s7-210:cr8 nextSlide base function
 // - s7-210:cr8 previous button with CN prev
-// - s7-210:cr8&pass in prevslide @onclick Button prev
+// - s7-210:cr8 & pass in prevslide @onclick Button prev
 // - s7-210:pass in FiChevronLeft @onclick Button prev
 // - s7-210:cr8 next button with CN next
+// - s7-210:cr8 & pass in nextslide @onclick Button next
