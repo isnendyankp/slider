@@ -8,6 +8,9 @@ const Carousel = () => {
   const prevSlide = () =>{
 
   }
+  const nextSlide = () => {
+
+  };
   return (
     <section className='slider-container'>
       {people.map((person)=>{
@@ -52,3 +55,4 @@ export default Carousel
 // - s7-210:import & pass in FaQuoteRight
 // - s7-210:Add CN icon @FaQuoteRight
 // - s7-210:cr8 prevSlide base function
+// - s7-210:cr8 nextSlide base function
