@@ -12,19 +12,23 @@ const Carousel = () => {
 
   };
   return (
-    <section className='slider-container'>
-      {people.map((person)=>{
+    <section className="slider-container">
+      {people.map((person) => {
         const { id, image, name, title, quote } = person;
-        return <article className='slide' key={id}>
-          <img src={image} alt={name} className='person-img' />
-          <h5 className='name'>{name}</h5>
-          <p className='title'>{title}</p>
-          <p className='text'>{quote}</p>
-          <FaQuoteRight className='icon' />
-        </article>
+        return (
+          <article className="slide" key={id}>
+            <img src={image} alt={name} className="person-img" />
+            <h5 className="name">{name}</h5>
+            <p className="title">{title}</p>
+            <p className="text">{quote}</p>
+            <FaQuoteRight className="icon" />
+          </article>
+        );
       })}
+      <button type="button" className="prev" >
+      </button>
     </section>
-  )
+  );
 }
 
 export default Carousel
@@ -56,3 +60,4 @@ export default Carousel
 // - s7-210:Add CN icon @FaQuoteRight
 // - s7-210:cr8 prevSlide base function
 // - s7-210:cr8 nextSlide base function
+// - s7-210:cr8 previous button with CN prev
