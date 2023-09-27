@@ -5,6 +5,9 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Carousel = () => {
   const [people, setPeople] = usestate(shortList);
+  const prevSlide = () =>{
+
+  }
   return (
     <section className='slider-container'>
       {people.map((person)=>{
@@ -48,3 +51,4 @@ export default Carousel
 // - s7-210:pass in quote @p with CN text
 // - s7-210:import & pass in FaQuoteRight
 // - s7-210:Add CN icon @FaQuoteRight
+// - s7-210:cr8 prevSlide base function
