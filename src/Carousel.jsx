@@ -25,7 +25,8 @@ const Carousel = () => {
           </article>
         );
       })}
-      <button type="button" className="prev" >
+      <button type="button" className="prev" onClick={prevSlide}>
+
       </button>
     </section>
   );
@@ -61,3 +62,4 @@ export default Carousel
 // - s7-210:cr8 prevSlide base function
 // - s7-210:cr8 nextSlide base function
 // - s7-210:cr8 previous button with CN prev
+// - s7-210:cr8&pass in prevslide @onclick Button prev
