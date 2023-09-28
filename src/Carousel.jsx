@@ -13,7 +13,7 @@ const Carousel = () => {
   };
   return (
     <section className="slider-container">
-      {people.map((person) => {
+      {people.map((person, personIndex) => {
         const { id, image, name, title, quote } = person;
         return (
           <article className="slide next-slide" key={id}>
@@ -71,3 +71,4 @@ export default Carousel
 // - s7-210:cr8 & pass in nextslide @onclick Button next
 // - s7-210:pass in FiChevronright @onclick Button next
 // - s7-212: Change CN slide to slide next-slide @article
+// - s7-212: remove next-slide @article & add personIndex @people.map
