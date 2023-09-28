@@ -16,7 +16,7 @@ const Carousel = () => {
       {people.map((person, personIndex) => {
         const { id, image, name, title, quote } = person;
         return (
-          <article className="slide next-slide" style={{transform:}} key={id}>
+          <article className="slide next-slide" style={{transform:`translateX()`}} key={id}>
             <img src={image} alt={name} className="person-img" />
             <h5 className="name">{name}</h5>
             <p className="title">{title}</p>
@@ -73,3 +73,4 @@ export default Carousel
 // - s7-212: Change CN slide to slide next-slide @article
 // - s7-212: remove next-slide @article & add personIndex @people.map
 // - s7-212: Add style={{transform:}} @article
+// - s7-212: Add translateX() @article style
