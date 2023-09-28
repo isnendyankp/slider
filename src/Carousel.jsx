@@ -4,7 +4,7 @@ import { FaQuoteRight } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Carousel = () => {
-  const [people, setPeople] = usestate(shortList);
+  const [people, setPeople] = usestate(list);
   const prevSlide = () =>{
 
   }
@@ -16,7 +16,7 @@ const Carousel = () => {
       {people.map((person) => {
         const { id, image, name, title, quote } = person;
         return (
-          <article className="slide" key={id}>
+          <article className="slide next-slide" key={id}>
             <img src={image} alt={name} className="person-img" />
             <h5 className="name">{name}</h5>
             <p className="title">{title}</p>
@@ -70,3 +70,4 @@ export default Carousel
 // - s7-210:cr8 next button with CN next
 // - s7-210:cr8 & pass in nextslide @onclick Button next
 // - s7-210:pass in FiChevronright @onclick Button next
+// - s7-212: Change CN slide to slide next-slide @article
