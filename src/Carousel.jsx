@@ -19,7 +19,7 @@ const Carousel = () => {
         return (
           <article 
             className="slide next-slide" 
-            style={{transform:`translateX(${100 * personIndex}%)`}} 
+            style={{transform:`translateX(${100 * (personIndex - currentPerson)}%)`}} 
             key={id}
           >
             <img src={image} alt={name} className="person-img" />
@@ -81,3 +81,4 @@ export default Carousel
 // - s7-212: Add translateX() @article style
 // - s7-212: Add 100 * personIndex @article style>transfrom>translateX()
 // - s7-213: Add currentPerson state value
+// - s7-213: passin currentPerson to style @article
