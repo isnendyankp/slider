@@ -11,7 +11,9 @@ const Carousel = () => {
   }
   const nextSlide = () => {
 
-    setCurrentPerson(currentPerson + 1)
+    setCurrentPerson(()=>{
+
+    })
   };
   return (
     <section className="slider-container">
@@ -85,3 +87,4 @@ export default Carousel
 // - s7-213: Add currentPerson state value
 // - s7-213: passin currentPerson to style @article
 // - s7-213: trying Add setCurrentPerson logic @nextSlide
+// - s7-213:edit setCurrentPerson logic base @nextSlide
