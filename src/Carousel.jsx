@@ -11,6 +11,7 @@ const Carousel = () => {
   }
   const nextSlide = () => {
 
+    setCurrentPerson(currentPerson + 1)
   };
   return (
     <section className="slider-container">
@@ -19,7 +20,8 @@ const Carousel = () => {
         return (
           <article 
             className="slide next-slide" 
-            style={{transform:`translateX(${100 * (personIndex - currentPerson)}%)`}} 
+            style={{transform:`translateX(${100 * (personIndex - currentPerson)}%)`,
+          }} 
             key={id}
           >
             <img src={image} alt={name} className="person-img" />
@@ -82,3 +84,4 @@ export default Carousel
 // - s7-212: Add 100 * personIndex @article style>transfrom>translateX()
 // - s7-213: Add currentPerson state value
 // - s7-213: passin currentPerson to style @article
+// - s7-213: trying Add setCurrentPerson logic @nextSlide
