@@ -5,6 +5,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Carousel = () => {
   const [people, setPeople] = usestate(list);
+  const [currentPerson, setCurrentPerson] = usestate(0);
   const prevSlide = () =>{
 
   }
@@ -79,3 +80,4 @@ export default Carousel
 // - s7-212: Add style={{transform:}} @article
 // - s7-212: Add translateX() @article style
 // - s7-212: Add 100 * personIndex @article style>transfrom>translateX()
+// - s7-213: Add currentPerson state value
