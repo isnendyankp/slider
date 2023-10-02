@@ -25,7 +25,7 @@ const Carousel = () => {
         const { id, image, name, title, quote } = person;
         return (
           <article 
-            className="slide next-slide" 
+            className="slide" 
             style={{transform:`translateX(${100 * (personIndex - currentPerson)}%)`,
           }} 
             key={id}
@@ -99,3 +99,4 @@ export default Carousel
 // - s7-213:Add oldPerson @prevSlide>setCurrentPerson
 // - s7-213:cr8 result with oldPerson -1 @prevSlide>setCurrentPerson
 // - s7-213:cr8 return result @prevSlide>setCurrentPerson
+// - s7-213:change CN article to slide @article
