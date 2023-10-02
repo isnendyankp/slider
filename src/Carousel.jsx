@@ -8,7 +8,8 @@ const Carousel = () => {
   const [currentPerson, setCurrentPerson] = usestate(0);
   const prevSlide = () =>{
     setCurrentPerson((oldPerson)=>{
-      const result = (oldPerson - 1) % people.length; 
+      const result = (oldPerson - 1) % people.length;
+      return result; 
     })
   }
   const nextSlide = () => {
@@ -97,3 +98,4 @@ export default Carousel
 // - s7-213:cr8 setCurrentPerson logic @prevSlide
 // - s7-213:Add oldPerson @prevSlide>setCurrentPerson
 // - s7-213:cr8 result with oldPerson -1 @prevSlide>setCurrentPerson
+// - s7-213:cr8 return result @prevSlide>setCurrentPerson
