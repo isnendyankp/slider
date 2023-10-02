@@ -29,6 +29,7 @@ const Carousel = () => {
             style={{
               transform: `translateX(${100 * (personIndex - currentPerson)}%)`,
               opacity: personIndex === currentPerson ? 1 : 0,
+              visibility: personIndex === currentPerson ? 'visible' : 'hidden',
             }}
             key={id}
           >
@@ -103,3 +104,4 @@ export default Carousel
 // - s7-213:cr8 return result @prevSlide>setCurrentPerson
 // - s7-213:change CN article to slide @article
 // - s7-213:Add opacity logic @article
+// - s7-213:Add visibility logic @article
