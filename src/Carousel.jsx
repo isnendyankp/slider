@@ -24,10 +24,12 @@ const Carousel = () => {
       {people.map((person, personIndex) => {
         const { id, image, name, title, quote } = person;
         return (
-          <article 
-            className="slide" 
-            style={{transform:`translateX(${100 * (personIndex - currentPerson)}%)`,
-          }} 
+          <article
+            className="slide"
+            style={{
+              transform: `translateX(${100 * (personIndex - currentPerson)}%)`,
+              opacity: personIndex === currentPerson ? 1 : 0,
+            }}
             key={id}
           >
             <img src={image} alt={name} className="person-img" />
@@ -100,3 +102,4 @@ export default Carousel
 // - s7-213:cr8 result with oldPerson -1 @prevSlide>setCurrentPerson
 // - s7-213:cr8 return result @prevSlide>setCurrentPerson
 // - s7-213:change CN article to slide @article
+// - s7-213:Add opacity logic @article
