@@ -4,8 +4,9 @@ import { FaQuoteRight } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Carousel = () => {
-  const [people, setPeople] = usestate(list);
+  const [people, setPeople] = usestate(longList);
   const [currentPerson, setCurrentPerson] = usestate(0);
+
   const prevSlide = () =>{
     setCurrentPerson((oldPerson)=>{
       const result = (oldPerson - 1) % people.length;
@@ -105,3 +106,4 @@ export default Carousel
 // - s7-213:change CN article to slide @article
 // - s7-213:Add opacity logic @article
 // - s7-213:Add visibility logic @article
+// - s7-213:edit people state value @usestate
