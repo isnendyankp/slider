@@ -22,8 +22,10 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-
-  });
+    setInterval(() => {
+     
+    });
+  },[]);
 
   return (
     <section className="slider-container">
@@ -113,3 +115,4 @@ export default Carousel
 // - s7-213:Add visibility logic @article
 // - s7-213:edit people state value @usestate
 // - s7-213:cr8 useEffect base with callback function
+// - s7-213:cr8 setInterval @useEffect
