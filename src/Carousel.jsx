@@ -25,6 +25,9 @@ const Carousel = () => {
     let sliderId = setInterval(() => {
       nextSlide(); 
     }, 2000);
+    return () => {
+      
+    };
   },[currentPerson]);
 
   return (
@@ -120,3 +123,4 @@ export default Carousel
 // - s7-214:cr8 nextSlide logic @setInterval
 // - s7-214:Add currentPerson @setInterval>nextSlide
 // - s7-214:sign in sliderId @useEffect
+// - s7-214:cr8 return @useEffect
