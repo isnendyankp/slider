@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { shortList, list, longList } from './data';
 import { FaQuoteRight } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
@@ -20,6 +20,11 @@ const Carousel = () => {
       return result;
     })
   };
+
+  useEffect(() => {
+
+  });
+
   return (
     <section className="slider-container">
       {people.map((person, personIndex) => {
@@ -107,3 +112,4 @@ export default Carousel
 // - s7-213:Add opacity logic @article
 // - s7-213:Add visibility logic @article
 // - s7-213:edit people state value @usestate
+// - s7-213:cr8 useEffect base with callback function
