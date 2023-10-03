@@ -22,7 +22,7 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-    setInterval(() => {
+    let sliderId = setInterval(() => {
       nextSlide(); 
     }, 2000);
   },[currentPerson]);
@@ -114,8 +114,9 @@ export default Carousel
 // - s7-213:Add opacity logic @article
 // - s7-213:Add visibility logic @article
 // - s7-213:edit people state value @usestate
-// - s7-213:cr8 useEffect base with callback function
-// - s7-213:cr8 setInterval @useEffect
-// - s7-213:Add 2000 @setInterval
-// - s7-213:cr8 nextSlide logic @setInterval
-// - s7-213:Add currentPerson @setInterval>nextSlide
+// - s7-214:cr8 useEffect base with callback function
+// - s7-214:cr8 setInterval @useEffect
+// - s7-214:Add 2000 @setInterval
+// - s7-214:cr8 nextSlide logic @setInterval
+// - s7-214:Add currentPerson @setInterval>nextSlide
+// - s7-214:sign in sliderId @useEffect
