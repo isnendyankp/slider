@@ -26,7 +26,7 @@ const Carousel = () => {
       nextSlide(); 
     }, 2000);
     return () => {
-      
+      clearInterval();
     };
   },[currentPerson]);
 
@@ -124,3 +124,4 @@ export default Carousel
 // - s7-214:Add currentPerson @setInterval>nextSlide
 // - s7-214:sign in sliderId @useEffect
 // - s7-214:cr8 return @useEffect
+// - s7-214:cr8 clearInterval @useEffect>return
