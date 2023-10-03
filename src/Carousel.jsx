@@ -25,7 +25,7 @@ const Carousel = () => {
     setInterval(() => {
       nextSlide(); 
     }, 2000);
-  },[]);
+  },[currentPerson]);
 
   return (
     <section className="slider-container">
@@ -118,3 +118,4 @@ export default Carousel
 // - s7-213:cr8 setInterval @useEffect
 // - s7-213:Add 2000 @setInterval
 // - s7-213:cr8 nextSlide logic @setInterval
+// - s7-213:Add currentPerson @setInterval>nextSlide
