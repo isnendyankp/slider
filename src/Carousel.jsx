@@ -24,7 +24,7 @@ const Carousel = () => {
   useEffect(() => {
     setInterval(() => {
      
-    });
+    }, 2000);
   },[]);
 
   return (
@@ -116,3 +116,4 @@ export default Carousel
 // - s7-213:edit people state value @usestate
 // - s7-213:cr8 useEffect base with callback function
 // - s7-213:cr8 setInterval @useEffect
+// - s7-213:Add 2000 @setInterval
