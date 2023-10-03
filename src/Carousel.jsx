@@ -23,7 +23,7 @@ const Carousel = () => {
 
   useEffect(() => {
     setInterval(() => {
-     
+      nextSlide(); 
     }, 2000);
   },[]);
 
@@ -117,3 +117,4 @@ export default Carousel
 // - s7-213:cr8 useEffect base with callback function
 // - s7-213:cr8 setInterval @useEffect
 // - s7-213:Add 2000 @setInterval
+// - s7-213:cr8 nextSlide logic @setInterval
