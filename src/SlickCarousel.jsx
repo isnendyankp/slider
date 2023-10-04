@@ -6,7 +6,7 @@ import { list } from "./data";
 import { FaQuoteRight } from "react-icons/fa";
 
 const SlickCarousel = () => {
-
+    return <h2> Slick Slider </h2>;
 };
 
 // - s7-216:Cr8 SlickCarousel component
@@ -16,3 +16,4 @@ const SlickCarousel = () => {
 // - s7-216:import list from data
 // - s7-216:import FaQuoteRight from react-icons/fa
 // - s7-216:Cr8 SlickCarousel component
+// - s7-216:cr8 return with h2 Slick Slider
