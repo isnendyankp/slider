@@ -7,8 +7,8 @@ import { FaQuoteRight } from "react-icons/fa";
 
 const SlickCarousel = () => {
     const settings = {
-
-    }
+        dots: true
+    };
     return <h2> Slick Slider </h2>;
 };
 
@@ -24,3 +24,4 @@ export default SlickCarousel;
 // - s7-216:cr8 return with h2 Slick Slider
 // - s7-216:export default SlickCarousel
 // - s7-216:create settings
+// - s7-216:Add dots:true @SlickCarousel>settings
