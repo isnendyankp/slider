@@ -18,6 +18,11 @@ const SlickCarousel = () => {
             <Slider {...settings}>
                 {list.map((person) => { 
                     const {id, image, name, title, quote} = person;
+                    return (
+                        <article className="slide" key={id}>
+                            
+                        </article>
+                    );
                 })}
             </Slider>
         </section>       
@@ -44,4 +49,5 @@ export default SlickCarousel;
 // - s7-216:Pass in Slider with settings @SlickCarousel>return
 // - s7-216:Add list.map @SlickCarousel>Slider
 // - s7-216:Cr8 person @list map
+// - s7-216:Add return with article @list map>person>return
 
