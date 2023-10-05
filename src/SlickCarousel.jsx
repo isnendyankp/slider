@@ -6,6 +6,9 @@ import { list } from "./data";
 import { FaQuoteRight } from "react-icons/fa";
 
 const SlickCarousel = () => {
+    const settings = {
+
+    }
     return <h2> Slick Slider </h2>;
 };
 
@@ -20,3 +23,4 @@ export default SlickCarousel;
 // - s7-216:Cr8 SlickCarousel component
 // - s7-216:cr8 return with h2 Slick Slider
 // - s7-216:export default SlickCarousel
+// - s7-216:create settings
