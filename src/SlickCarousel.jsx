@@ -13,7 +13,11 @@ const SlickCarousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
-    return <h2> Slick Slider </h2>;
+    return (
+        <section className="slic-container">
+            <h2> Slick Slider </h2>;
+        </section>       
+    );
 };
 
 export default SlickCarousel;
@@ -32,3 +36,4 @@ export default SlickCarousel;
 // - s7-216:Add infinite:true @SlickCarousel>settings
 // - s7-216:Add speed:500 @SlickCarousel>settings
 // - s7-216:Add slidesToShow & slidesToScroll @SlickCarousel>settings
+// - s7-216:Cr8 section with className slic-container @SlickCarousel>return
