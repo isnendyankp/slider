@@ -9,7 +9,9 @@ const SlickCarousel = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
     };
     return <h2> Slick Slider </h2>;
 };
@@ -29,3 +31,4 @@ export default SlickCarousel;
 // - s7-216:Add dots:true @SlickCarousel>settings
 // - s7-216:Add infinite:true @SlickCarousel>settings
 // - s7-216:Add speed:500 @SlickCarousel>settings
+// - s7-216:Add slidesToShow & slidesToScroll @SlickCarousel>settings
