@@ -15,8 +15,10 @@ const SlickCarousel = () => {
     };
     return (
         <section className="slic-container">
-            <Slider {...settings}> 
-                
+            <Slider {...settings}>
+                {list.map((person) => { 
+
+                })}
             </Slider>
         </section>       
     );
@@ -40,3 +42,5 @@ export default SlickCarousel;
 // - s7-216:Add slidesToShow & slidesToScroll @SlickCarousel>settings
 // - s7-216:Cr8 section with className slic-container @SlickCarousel>return
 // - s7-216:Pass in Slider with settings @SlickCarousel>return
+// - s7-216:Add list.map @SlickCarousel>Slider
+
