@@ -20,7 +20,7 @@ const SlickCarousel = () => {
                     const {id, image, name, title, quote} = person;
                     return (
                         <article className="slide" key={id}>
-                            
+                            <img src={image} alt={name} className='person-img' />
                         </article>
                     );
                 })}
@@ -46,8 +46,9 @@ export default SlickCarousel;
 // - s7-216:Add speed:500 @SlickCarousel>settings
 // - s7-216:Add slidesToShow & slidesToScroll @SlickCarousel>settings
 // - s7-216:Cr8 section with className slic-container @SlickCarousel>return
-// - s7-216:Pass in Slider with settings @SlickCarousel>return
-// - s7-216:Add list.map @SlickCarousel>Slider
-// - s7-216:Cr8 person @list map
-// - s7-216:Add return with article @list map>person>return
+// - s7-217:Pass in Slider with settings @SlickCarousel>return
+// - s7-217:Add list.map @SlickCarousel>Slider
+// - s7-217:Cr8 person @list map
+// - s7-217:Add return with article @list map>person>return
+// - s7-217:Add & pass in image, name, person-img @list map>person>return>article
 
