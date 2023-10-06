@@ -1,34 +1,33 @@
-import React, { useEffect } from 'react'
+import { useEffect, useState } from 'react';
 import { shortList, list, longList } from './data';
 import { FaQuoteRight } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Carousel = () => {
-  const [people, setPeople] = usestate(longList);
-  const [currentPerson, setCurrentPerson] = usestate(0);
+  const [people, setPeople] = useState(longList);
+  const [currentPerson, setCurrentPerson] = useState(0);
 
-  const prevSlide = () =>{
-    setCurrentPerson((oldPerson)=>{
-      const result = (oldPerson - 1) % people.length;
-      return result; 
-    })
-  }
+  const prevSlide = () => {
+    setCurrentPerson((oldPerson) => {
+      const result = (oldPerson - 1 + people.length) % people.length;
+      return result;
+    });
+  };
   const nextSlide = () => {
-
-    setCurrentPerson((oldPerson)=>{
+    setCurrentPerson((oldPerson) => {
       const result = (oldPerson + 1) % people.length;
       return result;
-    })
+    });
   };
 
   useEffect(() => {
     let sliderId = setInterval(() => {
-      nextSlide(); 
-    }, 2000);
+      nextSlide();
+    }, 5000);
     return () => {
       clearInterval(sliderId);
     };
-  },[currentPerson]);
+  }, [currentPerson]);
 
   return (
     <section className="slider-container">
@@ -60,9 +59,8 @@ const Carousel = () => {
       </button>
     </section>
   );
-}
-
-export default Carousel
+};
+export default Carousel;
 
 // - s7-209:Cr8 base carousel.jsx
 // - s7-209:Change structure div into h2
@@ -81,7 +79,7 @@ export default Carousel
 // - s7-210:pass in image @return img src
 // - s7-210:pass in name @return img alt
 // - s7-210:cr8 person-img CN  @return img
-// - s7-210:cr8 h5 wtih CN name  @return 
+// - s7-210:cr8 h5 wtih CN name  @return
 // - s7-210:pass in name @return h5
 // - s7-210:cr8 p with CN title
 // - s7-210:pass in title @p with CN title
