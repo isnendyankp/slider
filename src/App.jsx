@@ -5,7 +5,7 @@ const App = () => {
   return (
     <main>
       <Carousel />
-      <SlickCarousel />
+      {/* <SlickCarousel /> */}
     </main>
   );
 };
@@ -15,3 +15,5 @@ export default App;
 // - s7-209:Pass in Carousel @main return
 // - s7-216:import slickCarousel @App
 // - s7-216:Pass in SlickCarousel @main return
+// - s7-216:uncomment SlickCarousel @App
+
