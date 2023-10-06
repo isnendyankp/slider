@@ -24,7 +24,7 @@ const SlickCarousel = () => {
                             <h5 className='name'>{name}</h5>
                             <p className='title'>{title}</p>
                             <p className='text'>{quote}</p>
-                            
+                            <FaQuoteRight className='icon' />                           
                         </article>
                     );
                 })}
@@ -58,4 +58,5 @@ export default SlickCarousel;
 // - s7-217:Add & pass in name @return>article
 // - s7-217:Add & pass in title @return>article
 // - s7-217:Add & pass in quote @return>article
+// - s7-217:Add FaQuoteRight @return>article
 
