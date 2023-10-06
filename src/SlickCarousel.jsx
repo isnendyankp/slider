@@ -11,7 +11,8 @@ const SlickCarousel = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true
     };
     return (
         <section className="slic-container">
@@ -60,4 +61,4 @@ export default SlickCarousel;
 // - s7-217:Add & pass in quote @return>article
 // - s7-217:Add FaQuoteRight @return>article
 // - s7-217:Change value slidesToShow 2 @SlickCarousel>settings
-
+// - s7-217:Add autoplay:true @SlickCarousel>settings
