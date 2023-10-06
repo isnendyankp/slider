@@ -13,8 +13,10 @@ const SlickCarousel = () => {
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 1000,
+        pauseOnHover: true,
     };
+
     return (
         <section className="slic-container">
             <Slider {...settings}>
@@ -64,3 +66,4 @@ export default SlickCarousel;
 // - s7-217:Change value slidesToShow 2 @SlickCarousel>settings
 // - s7-217:Add autoplay:true @SlickCarousel>settings
 // - s7-217:Add autoplaySpeed:1000 @SlickCarousel>settings
+// - s7-217:Add pauseOnHover:true @SlickCarousel>settings
