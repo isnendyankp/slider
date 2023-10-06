@@ -21,6 +21,7 @@ const SlickCarousel = () => {
                     return (
                         <article className="slide" key={id}>
                             <img src={image} alt={name} className='person-img' />
+                            <h5 className='name'>{name}</h5>
                         </article>
                     );
                 })}
@@ -51,4 +52,5 @@ export default SlickCarousel;
 // - s7-217:Cr8 person @list map
 // - s7-217:Add return with article @list map>person>return
 // - s7-217:Add & pass in image, name, person-img @list map>person>return>article
+// - s7-217:Add & pass in name @list map>person>return>article
 
