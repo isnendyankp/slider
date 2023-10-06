@@ -10,7 +10,7 @@ const SlickCarousel = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
     };
     return (
@@ -59,4 +59,5 @@ export default SlickCarousel;
 // - s7-217:Add & pass in title @return>article
 // - s7-217:Add & pass in quote @return>article
 // - s7-217:Add FaQuoteRight @return>article
+// - s7-217:Change value slidesToShow 2 @SlickCarousel>settings
 
