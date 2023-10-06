@@ -23,6 +23,8 @@ const SlickCarousel = () => {
                             <img src={image} alt={name} className='person-img' />
                             <h5 className='name'>{name}</h5>
                             <p className='title'>{title}</p>
+                            <p className='text'>{quote}</p>
+                            
                         </article>
                     );
                 })}
@@ -55,4 +57,5 @@ export default SlickCarousel;
 // - s7-217:Add & pass in image, name, person-img @list map>person>return>article
 // - s7-217:Add & pass in name @return>article
 // - s7-217:Add & pass in title @return>article
+// - s7-217:Add & pass in quote @return>article
 
